@@ -21,9 +21,14 @@ ul {
   --body-color: hsl(0 0% 98%);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font: 400 1rem "DM Sans", sans-serif;
   color: var(--text-color);
+  background: var(--body-color);
   -webkit-font-smoothing: antialiased;
 }
 
@@ -40,6 +45,10 @@ body {
   background-color: var(--body-color);
 }
 
+#header.scroll {
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+}
+
 nav {
   width: 100%;
   height: var(--header-height);
@@ -51,6 +60,12 @@ nav {
 nav .menu {
   opacity: 0;
   visibility: hidden;
+  top: -20rem;
+  transition: .2s;
+}
+
+nav .menu ul {
+  display: none;
 }
 
 nav ul li {
@@ -98,6 +113,10 @@ nav.show .menu {
   place-content: center;
 }
 
+nav.show .menu ul {
+  display: grid;
+}
+
 nav.show ul.grid {
   gap: 4rem
 }
@@ -114,13 +133,14 @@ nav .icon-close {
 
   position: absolute;
   right: 1.5rem;
-
+  top: -1.5rem;
+  transition: 0.2s;
 }
 
 nav.show div.icon-close {
   visibility: visible;
   opacity: 1;
-
+  top: 1.5rem;
 }
 
 a {
@@ -176,6 +196,14 @@ img {
 
 .section .title {
   margin-bottom: 1rem;
+}
+
+.section header {
+  margin-bottom: 4rem;
+}
+
+.section header strong {
+  color: var(--base-color);
 }
 
 #home .container {
@@ -291,4 +319,28 @@ img {
   hsla(var(--hue), 65%, 88%, 0.34),
   hsla(var(--hue), 36%, 57%, 1)
   );
+}
+
+.cards.grid {
+  gap: 1.5rem;
+}
+
+.card {
+  padding: 3.625rem 2rem;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.08);
+  border-bottom: .25rem solid var(--base-color);
+  border-radius: .25rem .25rem 0 0;
+  text-align: center;
+}
+
+.card i {
+  display: block;
+  margin-bottom: 1.5rem;
+  font-size: 5rem;
+  color: var(--base-color)
+}
+
+.card .title {
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
 }
