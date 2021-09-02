@@ -4,6 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/fonts/style.css">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,7 +16,7 @@
 
 <body>
   <header id="header">
-    <nav class="container show">
+    <nav class="container">
       <a href="#" class="logo">beauty<span>salon.</span></a>
       <div class="menu">
         <ul class="grid">
@@ -27,8 +28,8 @@
         </ul>
       </div>
 
-      <div class="open">...</div>
-      <div class="close">x</div>
+      <div class="toggle icon-menu"></div>
+      <div class="toggle icon-close"></div>
     </nav>
   </header>
 
@@ -52,15 +53,61 @@
 
     <section class="section" id="about">
       <div class="container grid">
-        Sobre
+        <div class="image">
+          <img src="https://images.unsplash.com/photo-1559599101-f09722fb4948?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8aGFpcmRyZXNzZXJ8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60"
+          alt="3 mulheres sorrindo, fazendo pose com equipamentos de salão de cabelo"
+          >
+        </div>
+        <div class="text">
+          <h2 class="title">Sobre nós</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, quisquam. Nam consequuntur rerum consectetur illum possimus pariatur nobis non quae cum vero, sit ipsa consequatur velit amet voluptate reiciendis rem!</p> <br>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ratione aliquid fugiat repudiandae pariatur fugit blanditiis quae inventore aliquam? Perferendis, non maxime repudiandae explicabo odio dolor qui magnam iste rerum?</p> <br>
+          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim aliquam perspiciatis adipisci natus voluptatum atque quas ut voluptas sunt doloremque inventore commodi, eveniet reprehenderit soluta quisquam dolorum vero harum libero.</p>
+        </div>
       </div>
     </section>
 
+    <div class="divider-2"></div>
+
     <section class="section" id="services">
       <div class="container grid">
-        Serviços
+        <header>
+          <h2 class="title">Serviços</h2>
+          <p>Com mais de 10 anos no mercado, o <strong>Beautysalon</strong> já conquistou
+             clientes de inúmeros países com seus tratamentos exclusivos e
+             totalmente naturais
+          </p>
+        </header>
+        <div class="cards">
+          <div class="card">
+            <div class="icon-woman-hair"></div>
+            <h3 class="title">Terapia Capilar</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Fugiat amet totam ut neque velit soluta adipisci! Fuga,
+               eaque ipsum voluptatem.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-trim"></div>
+            <h3 class="title">Cortes</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Fugiat amet totam ut neque velit soluta adipisci! Fuga,
+               eaque ipsum voluptatem.
+            </p>
+          </div>
+          <div class="card">
+            <div class="icon-cosmetic"></div>
+            <h3 class="title">Tratamentos</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+               Fugiat amet totam ut neque velit soluta adipisci! Fuga,
+               eaque ipsum voluptatem.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   </main>
+
+  <script src="./app.js"></script>
 </body>
 </html>
