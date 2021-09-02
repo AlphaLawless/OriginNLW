@@ -25,3 +25,27 @@ window.addEventListener('scroll', function () {
     header.classList.remove('scroll');
   }
 });
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 1,
+  pagination: {
+    el: '.swiper-pagination'
+  },
+  mousewheel: true,
+  Keyboard: true
+});
+
+const scrollReveal = ScrollReveal({
+  origin: 'top',
+  distance: '30px',
+  duration: 500,
+  reset: true
+});
+
+scrollReveal.reveal(`
+  #home .text, #home .image,
+  #about .image, #about .text,
+  #services header, #services .card,
+  #testimonials header, #testimonials .testimonials,
+  #contact .text, #contact .links
+  `, {interval: 100});
