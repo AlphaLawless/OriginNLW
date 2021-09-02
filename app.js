@@ -38,7 +38,7 @@ const swiper = new Swiper('.swiper', {
 const scrollReveal = ScrollReveal({
   origin: 'top',
   distance: '30px',
-  duration: 500,
+  duration: 700,
   reset: true
 });
 
@@ -46,6 +46,7 @@ scrollReveal.reveal(`
   #home .text, #home .image,
   #about .image, #about .text,
   #services header, #services .card,
-  #testimonials header, #testimonials .testimonials,
+  #testimonials .text,
   #contact .text, #contact .links
-  `, {interval: 100});
+  `, {interval: 100}
+);
