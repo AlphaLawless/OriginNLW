@@ -38,8 +38,8 @@ Você pode visualizar o layout do projeto através [desse link para o figma](htt
 
 OBS: É necessário ter conta no [figma](https://figma.com/) para acessá-lo.
 ## Desafios
--[] Fazer breakpoints no media queries para mais resoluções.
--[] Criar uma animação nos cards.
--[] Fazer para um modo Dark Mode.
+- [ ] Fazer breakpoints no media queries para mais resoluções.
+- [ ] Criar uma animação nos cards.
+- [ ] Fazer para um modo Dark Mode.
 ## Licença
 Esse projeto está sob a Licensa MIT. Veja o arquivo [LICENSE](./LICENSE)
