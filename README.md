@@ -15,6 +15,7 @@
 <p align="center">
   <img alt="OriginSix" src=".github/cover.png" width="100%">
 </p>
+
 ## Tecnologias
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 - HMTL
